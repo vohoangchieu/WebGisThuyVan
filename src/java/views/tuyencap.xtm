@@ -1,0 +1,95 @@
+<div class="popup-overlay"  id="popup-add-tuyencap" style="display: none">
+    <div class="popup-center" style="width: 640px;">
+        <div class="panel panel-info">
+            <div class="panel-heading" ><span id="popup-tuyencap-title"></span><span onclick="hidePopupAddTuyenCap()" class="glyphicon glyphicon-remove" aria-hidden="true" style="float: right;margin-right: 0;color: red"></span></div>
+            <div class="panel-body">
+
+                <form role="form" class="form-horizontal">
+                    <div class="form-group" style="display: none">
+                        <label for="MaSo" class="col-sm-2 control-label">Id</label>
+                        <div class="col-sm-4">
+                            <input type="text"  class="form-control" id="Id" placeholder="">
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label for="Ten" class="col-sm-2 control-label">Tên</label>
+                        <div class="col-sm-4">
+                            <input type="text"  class="form-control" id="Ten" placeholder="">
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="X1" class="col-sm-2 control-label">X1</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="X1">
+                        </div>
+                        <label for="Y1" class="col-sm-2 control-label">Y1</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="Y1">
+                        </div>
+                    </div>
+                    <div class="form-group">
+
+                        <label for="X1" class="col-sm-2 control-label">X2</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="X2">
+                        </div>
+                        <label for="Y2" class="col-sm-2 control-label">Y2</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="Y2">
+                        </div>
+                    </div>
+
+
+                    <div id="message-tuyencap" class="alert alert-danger" role="alert" style="padding: 6px;display: none;margin-top: 15px;"></div>
+                    <div style="float: right">
+                        <button type="button" class="btn btn-default" onclick="hidePopupAddTuyenCap()">Hủy</button>
+                        <button type="button" class="btn btn-info" id="btn-add-tuyencap" onclick="handlePopupSubmitAddTuyenCap()" style="display: none">Thêm</button>
+                        <button type="button" class="btn btn-info" id="btn-update-tuyencap" onclick="handlePopupSubmitUpdateTuyenCap()" style="display: none">Cập nhật</button>
+                        <button type="button" class="btn btn-info" id="btn-delete-tuyencap" onclick="hidePopupAddTuyenCap();showPopupConfirmDeleteTuyenCap()" style="display: none">Xóa</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="popup-overlay"  id="popup-confirm" >
+    <div class="popup-center" style="width: 300px;">
+        <div class="panel panel-info">
+            <div class="panel-heading" ><span id="confirm-title"></span><span onclick="hidePopupConfirm()" class="glyphicon glyphicon-remove" aria-hidden="true" style="float: right;margin-right: 0;color: red"></span></div>
+            <div class="panel-body">
+                <form role="form" class="form-horizontal">
+                    <p style="padding: 5px;" id="confirm-content"></p>
+                    <div style="float: right">
+                        <button type="button" class="btn btn-default" id="btn-confirm-cancel" onclick="hidePopupConfirm()"></button>
+                        <button type="button" class="btn btn-info" id="btn-confirm-ok" onclick="hidePopupConfirm()" ></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="popup-overlay"  id="popup-show-message" >
+    <div class="popup-center" style="width: 300px;">
+        <div class="panel panel-info">
+            <div class="panel-heading" ><span id="show-message-title">Thông báo</span><span onclick="hidePopupShowMessage()" class="glyphicon glyphicon-remove" aria-hidden="true" style="float: right;margin-right: 0;"></span></div>
+            <div class="panel-body">
+                <form role="form" class="form-horizontal">
+                    <p style="padding: 5px;" id="show-message-content"></p>
+                    <div style="float: right">
+                        <button type="button" class="btn btn-info" id="btn-show-message-ok" onclick="hidePopupShowMessage()">Đóng</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+

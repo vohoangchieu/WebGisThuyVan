@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <listener>
+        <listener-class>
+            web.gis.AppContextListener 
+        </listener-class>
+    </listener>
+    <servlet>
+        <servlet-name>IndexServlet</servlet-name>
+        <servlet-class>web.gis.IndexServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>IndexServlet</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+    
+    <!--tram -->
+    <servlet>
+        <servlet-name>AjaxAddBtsServlet</servlet-name>
+        <servlet-class>web.gis.AjaxAddBtsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AjaxAddBtsServlet</servlet-name>
+        <url-pattern>/ajax/add-bts</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>AjaxUpdateBtsServlet</servlet-name>
+        <servlet-class>web.gis.AjaxUpdateBtsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AjaxUpdateBtsServlet</servlet-name>
+        <url-pattern>/ajax/update-bts</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>AjaxDeleteBtsServlet</servlet-name>
+        <servlet-class>web.gis.AjaxDeleteBtsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AjaxDeleteBtsServlet</servlet-name>
+        <url-pattern>/ajax/delete-bts</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>AjaxGetSoLieuDoThuyVanServlet</servlet-name>
+        <servlet-class>web.gis.AjaxGetSoLieuDoThuyVanServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AjaxGetSoLieuDoThuyVanServlet</servlet-name>
+        <url-pattern>/ajax/getsolieudothuyvan</url-pattern>
+    </servlet-mapping>
+    
+    <!--tuyen cap -->
+    
+    <servlet>
+        <servlet-name>AjaxAddTuyenCapServlet</servlet-name>
+        <servlet-class>web.gis.AjaxAddTuyenCapServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AjaxAddTuyenCapServlet</servlet-name>
+        <url-pattern>/ajax/add-tuyencap</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>AjaxUpdateTuyenCapServlet</servlet-name>
+        <servlet-class>web.gis.AjaxUpdateTuyenCapServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AjaxUpdateTuyenCapServlet</servlet-name>
+        <url-pattern>/ajax/update-tuyencap</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>AjaxDeleteTuyenCapServlet</servlet-name>
+        <servlet-class>web.gis.AjaxDeleteTuyenCapServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AjaxDeleteTuyenCapServlet</servlet-name>
+        <url-pattern>/ajax/delete-tuyencap</url-pattern>
+    </servlet-mapping>
+    
+    <!--static -->
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>/css/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>/js/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>/img/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>/fonts/*</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

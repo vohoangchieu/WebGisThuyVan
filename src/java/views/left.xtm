@@ -1,0 +1,34 @@
+<div id="left-panel" class="col-md-3 col-sm-3 col-lg-3 col-xs-3" style="border: 1px solid #dfdfdf;height: 100%;border-bottom: none;border-left: none">
+    <div id="hide-left-panel"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></div>
+    <div class="panel panel-info" id="note-panel">
+        <div class="panel-heading">Chú thích</div>
+        <div class="panel-body" >
+            <table class="table table-bordered" style="margin-bottom: 0"> 
+
+                <tbody> 
+                    <!--thuy loi-->
+                    <tr><td colspan="4" style="font-weight: bold">THỦY LỢI</td></tr> 
+                    <tr><td><input type="checkbox" value="1" class="btsType" checked data-type="1"></td> <td><img src="{{contextPath}}/img/tramquantracthuyvan.ico?{{staticVersion}}" style="width: 20px;margin: auto"></td><td colspan="2">Trạm quan trắc thủy văn</td></tr> 
+                    <tr><td><input type="checkbox" value="1" class="btsType" checked data-type="1"></td> <td><img src="{{contextPath}}/img/saclo.ico?{{staticVersion}}" style="width: 20px;margin: auto"></td><td colspan="2">Vị Trí Sạt Lở</td></tr> 
+                    <tr><td><input type="checkbox" value="1" class="btsType" checked data-type="1"></td> <td><img src="{{contextPath}}/img/tramquantracdoman.ico?{{staticVersion}}" style="width: 20px;margin: auto"></td><td colspan="2">Trạm quan trắc độ mặn</td></tr> 
+                    <tr><td><input type="checkbox" value="1" class="btsType" checked data-type="1"></td> <td colspan="3" style="font-weight: bold">Cống</td></tr> 
+                    <tr><td></td><td><input type="checkbox" value="1" class="btsType" checked data-type="1"></td> <td style="margin: auto"><img src="{{contextPath}}/img/congdangmo.ico?{{staticVersion}}" style="width: 20px;margin: auto"></td><td colspan="2">Cống đang mở</td></tr> 
+                    <tr><td></td><td><input type="checkbox" value="1" class="btsType" checked data-type="1"></td> <td style="margin: auto"><img src="{{contextPath}}/img/congdangdong.ico?{{staticVersion}}" style="width: 20px;margin: auto"></td><td colspan="2">Cống đang đóng</td></tr> 
+                    <tr><td><input type="checkbox" value="1" class="btsType" checked data-type="1"></td> <td><img src="{{contextPath}}/img/trambomnuoc.ico?{{staticVersion}}" style="width: 20px;margin: auto"></td><td colspan="2">Trạm bơm nước</td></tr> 
+
+                    <!--thuy san-->
+                    <tr><td colspan="4" style="font-weight: bold">THỦY SẢN</td></tr> 
+                    <tr><td></td><td><input type="checkbox" value="1" class="btsType" checked data-type="1"></td> <td style="margin: auto"><img src="{{contextPath}}/img/treoao.ico?{{staticVersion}}" style="width: 20px;margin: auto"></td><td colspan="2">Treo ao</td></tr> 
+                    <tr><td></td><td><input type="checkbox" value="1" class="btsType" checked data-type="1"></td> <td style="margin: auto"><img src="{{contextPath}}/img/chuanbinuoi.ico?{{staticVersion}}" style="width: 20px;margin: auto"></td><td colspan="2">Chuẩn bị nuôi</td></tr> 
+                    <tr><td></td><td><input type="checkbox" value="1" class="btsType" checked data-type="1"></td> <td style="margin: auto"><img src="{{contextPath}}/img/dangnuoi.ico?{{staticVersion}}" style="width: 20px;margin: auto"></td><td colspan="2">Đang nuôi</td></tr> 
+                    <tr><td></td><td><input type="checkbox" value="1" class="btsType" checked data-type="1"></td> <td style="margin: auto"><img src="{{contextPath}}/img/chuyensangnuoikhac.ico?{{staticVersion}}" style="width: 20px;margin: auto"></td><td colspan="2">Chuyển sang nuôi khác</td></tr> 
+                    <tr><td><input type="checkbox" value="1" class="btsType" checked data-type="1"></td> <td><img src="{{contextPath}}/img/cosonuoitrongthuysan.ico?{{staticVersion}}" style="width: 20px;margin: auto"></td><td colspan="2">Cơ sở nuôi trồng thủy sản</td></tr> 
+
+                    <!--cap nuoc-->
+                    <tr><td colspan="4" style="font-weight: bold">CẤP NƯỚC</td></tr> 
+                    <tr><td><input type="checkbox" value="1" class="btsType" checked data-type="1"></td> <td><img src="{{contextPath}}/img/tramcungcapnuocsach.ico?{{staticVersion}}" style="width: 20px;margin: auto"></td><td colspan="2">Trạm cung cấp nước sạch</td></tr> 
+                </tbody> 
+            </table>
+        </div>
+    </div>
+</div>

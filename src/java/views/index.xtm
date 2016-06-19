@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+        <link rel="icon" href="{{contextPath}}/img/favicon.ico" type="image/x-icon">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{{webTitle}}</title>
+           <script type="text/javascript" 
+            src="http://maps.googleapis.com/maps/api/js?key=AIzaSyByc8l-aogtJC0sXXt33SBbjvHC6KbBZ0Y&libraries=drawing"></script>
+
+        <!-- Bootstrap -->
+        <link href="{{contextPath}}/css/bootstrap.min.css?{{staticVersion}}" rel="stylesheet">
+        <link href="{{contextPath}}/css/index.css?{{staticVersion}}" rel="stylesheet">
+        <link href="{{contextPath}}/css/jquery-ui.min.css?{{staticVersion}}" rel="stylesheet">
+        <link href="{{contextPath}}/css/select2.min.css?{{staticVersion}}" rel="stylesheet">
+        <link href="{{contextPath}}/css/bootstrap-datepicker.min.css?{{staticVersion}}" rel="stylesheet">
+        <script src="{{contextPath}}/js/jquery.min.js?{{staticVersion}}"></script>
+        <!--[if IE]>
+          <link href="{{contextPath}}/css/ie.css?{{staticVersion}}" rel="stylesheet">
+        <![endif]-->
+    </head>
+    <body>
+        <script>
+var contextPath = '{{contextPath}}';
+//var tuyencapList = {{tuyencapList}};
+var homeLat = {{homeLat}};
+var homeLng = {{homeLng}};
+var homeZoomLevel = {{homeZoomLevel}};
+var detailZoomLevel = {{detailZoomLevel}};
+var staticVersion = '{{staticVersion}}';
+var maso = '{{maso}}';
+var x = '{{x}}';
+var y = '{{y}}';
+var zoom = '{{zoom}}';
+var requestUrl = '{{requestUrl}}';
+var tramThuyVanList = {{tramThuyVanList}};
+        </script>
+        <div class="container" style="width: 100%;margin: auto;padding: 0;height: 95%">
+            {{>top}}
+            <div class="row" style="border: 1px solid #dfdfdf;border-top: none;border-bottom: none" id="row-content">
+                <div id="show-left-panel" style="display: none"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></div>
+               {{>left}}
+               {{>right}}
+                <div style="clear: both"></div>
+
+            </div>
+
+ 
+
+            <script src="{{contextPath}}/js/jquery-ui.min.js?{{staticVersion}}"></script>
+            <script src="{{contextPath}}/js/jquery.textcomplete.min.js?{{staticVersion}}"></script>
+            <script src="{{contextPath}}/js/bootstrap.min.js?{{staticVersion}}"></script>
+            <script src="{{contextPath}}/js/select2.min.js?{{staticVersion}}"></script>
+            <script src="{{contextPath}}/js/bootstrap-datepicker.min.js?{{staticVersion}}"></script>
+            <script src="{{contextPath}}/js/common.js?{{staticVersion}}"></script>
+            <script src="{{contextPath}}/js/index.js?{{staticVersion}}"></script>
+            <script src="{{contextPath}}/js/index1.js?{{staticVersion}}"></script>
+            <!--<script src="{{contextPath}}/js/tuyencap.js?{{staticVersion}}"></script>-->
+            <script src="{{contextPath}}/js/printmap.js?{{staticVersion}}"></script>
+            
+            <!--[if IE]>
+              <script src="{{contextPath}}/js/jquery.placeholder.js?{{staticVersion}}"></script>
+            <script>
+                $(function(){
+                    $('#search-panel input').placeholder();
+                })
+            </script>
+            <![endif]-->
+        </div>
+        {{>popup}}
+        {{>tramthuyvan}}
+        {{>popup_tuyencap}}
+    </body>
+</html>
